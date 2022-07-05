@@ -1,0 +1,14 @@
+INSERT INTO `admin` (`ID`, `First_Name`, `Last_Name`, `Address`, `DOB`, `Email`, `Gender`, `Password`, `Information`, `Members_Info`, `User_Info`, `Creators_Info`) VALUES ('1', 'Papri', 'Saha', 'Dhaka', '31-01-2000', 'paprisaha9@gmai.com', 
+'Female', '12345', 'Admin', 'Member', 'Guest User', 'Content Creator');
+
+SELECT * FROM `admin` WHERE ID= 1
+
+DELETE FROM `admin` WHERE ID =1
+
+UPDATE admin set Password='12345678' where id=1
+
+
+INSERT INTO `admin` (`ID`, `First_Name`, `Last_Name`, `Address`, `DOB`, `Email`, `Gender`, `Password`, `Information`, `Members_Info`, `User_Info`, `Creators_Info`) VALUES ('2', 'Fuadhul', 'Anas', 'Dhaka', '23-3-2000', 'anas8@gmail.com', 
+'Male', '12345', 'Member', 'Member', 'Guest User', 'Content Creator');
+
+SELECT id, first_name, last_name FROM admin ORDER BY last_name
